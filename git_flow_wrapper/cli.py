@@ -1,6 +1,6 @@
 import typer
 
-from gflow import git_commands
+from git_flow_wrapper import git_commands
 
 app = typer.Typer()
 new_app = typer.Typer()

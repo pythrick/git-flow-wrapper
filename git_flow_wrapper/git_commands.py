@@ -47,7 +47,7 @@ def create_new_feature(name: str):
     __run("pull origin develop")
     _fetch_remote_changes()
     _delete_merged_branchs()
-    __run(f"flow feature start {name}")
+    __run(f"branch -b feature/{name}")
     return _get_current_branch()
 
 
@@ -56,7 +56,7 @@ def create_new_hotfix(name: str):
     __run("pull origin master")
     _fetch_remote_changes()
     _delete_merged_branchs()
-    __run(f"flow hotfix start {name}")
+    __run(f"branch -b hotfix/{name}")
     return _get_current_branch()
 
 
@@ -66,7 +66,7 @@ def create_new_release(version: str):
     __run("pull origin develop")
     _fetch_remote_changes()
     _delete_merged_branchs()
-    __run(f"flow release start {name}")
+    __run(f"branch -b release/{name}")
     return _get_current_branch()
 
 

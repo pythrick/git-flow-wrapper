@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "git-flow-wrapper"
-version = "0.1.1"
+version = "0.1.3"
 description = "Wrapper to run common git flow commands with remote repositories"
 authors = ["Patrick <patrick.pwall@gmail.com>"]
 license = "MIT"
